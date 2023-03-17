@@ -19,7 +19,8 @@ pipeline{
             steps{
                 
                 script{
-                    
+                    def mvnHome = tool 'Maven'
+                    env.PATH = "${mvnHome}/bin:${env.PATH}"    
                     sh 'mvn test'
                 }
             }

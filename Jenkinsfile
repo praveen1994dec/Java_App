@@ -21,7 +21,7 @@ pipeline{
                 script{
                     def mvnHome = tool 'Maven'
                     env.PATH = "${mvnHome}/bin:${env.PATH}"    
-                    sh 'mvn test'
+                    sh 'mvn test -Dspring-boot.run.profiles=dev'
                 }
             }
         }

@@ -10,6 +10,15 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>springboot</artifactId>
+	<profile>
+    <id>dev</id>
+    <properties>
+        <activatedProperties>dev</activatedProperties>
+    </properties>
+    <activation>
+        <activeByDefault>true</activeByDefault>
+    </activation>
+</profile>
 	<version>1.0.0</version>
 	<name>springboot</name>
 	<description>Demo project for Spring Boot</description>

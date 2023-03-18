@@ -1,4 +1,7 @@
 pipeline{
+    environment {
+       SPRING_PROFILES_ACTIVE=dev
+  }
     
     agent any 
     
